@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fat to Fit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="rest.css">
+    <link rel="icon" type="image/png" href="./image/favicon_io/logo2.png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Fat to Fit</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Experience Culinary Excellence</h2>
+            <p>Fresh ingredients, authentic recipes, unforgettable flavors</p>
+            <a href="#menu" class="btn">View Menu</a>
+            <a href="#contact" class="btn btn-outline">Reservations</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-category="starters">Starters</button>
+            <button class="tab-btn" data-category="mains">Main Courses</button>
+            <button class="tab-btn" data-category="desserts">Desserts</button>
+            <button class="tab-btn" data-category="drinks">Drinks</button>
+        </div>
+        <div class="menu-items">
+            <!-- Starters -->
+            <div class="menu-category active" id="starters">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Bruschetta</h3>
+                        <p>Toasted bread topped with tomatoes, garlic, and fresh basil</p>
+                    </div>
+                    <span class="item-price">$8.99</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Calamari</h3>
+                        <p>Crispy fried squid served with lemon aioli</p>
+                    </div>
+                    <span class="item-price">$12.99</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Caprese Salad</h3>
+                        <p>Fresh mozzarella, tomatoes, and sweet basil</p>
+                    </div>
+                    <span class="item-price">$10.99</span>
+                </div>
+            </div>
+            
+            <!-- Mains -->
+            <div class="menu-category" id="mains">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Filet Mignon</h3>
+                        <p>8oz tender chicken filet with roasted vegetables</p>
+                    </div>
+                    <span class="item-price">$28.99</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Grilled Salmon</h3>
+                        <p>Atlantic salmon with lemon butter sauce</p>
+                    </div>
+                    <span class="item-price">$24.99</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Mushroom Risotto</h3>
+                        <p>Creamy arborio rice with wild mushrooms</p>
+                    </div>
+                    <span class="item-price">$18.99</span>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="menu-category" id="desserts">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Tiramisu</h3>
+                        <p>Classic Italian dessert with coffee-soaked ladyfingers</p>
+                    </div>
+                    <span class="item-price">$8.99</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm chocolate cake with a molten center</p>
+                    </div>
+                    <span class="item-price">$9.99</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Crème Brûlée</h3>
+                        <p>Rich custard topped with caramelized sugar</p>
+                    </div>
+                    <span class="item-price">$7.99</span>
+                </div>
+            </div>
+            
+            <!-- Drinks -->
+            <div class="menu-category" id="drinks">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>House Wine</h3>
+                        <p>Glass of our signature red or white wine</p>
+                    </div>
+                    <span class="item-price">$7.99</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Craft Beer</h3>
+                        <p>Selection of local craft beers</p>
+                    </div>
+                    <span class="item-price">$6.99</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Signature Cocktails</h3>
+                        <p>Ask your server about our seasonal specials</p>
+                    </div>
+                    <span class="item-price">$10.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2 class="section-title">Our Story</h2>
+            <p>Founded in 2005, Fat to Fit has been serving authentic cuisine made from locally-sourced ingredients. Our chef, Marco Bianchi, brings over 20 years of culinary experience from Italy and France to create dishes that delight the senses.</p>
+            <p>We believe in sustainable practices and supporting local farmers and producers. Every dish tells a story of tradition, passion, and innovation.</p>
+            <div class="awards">
+                <div class="award">
+                    <i class="fas fa-award"></i>
+                    <h4>Best Restaurant 2022</h4>
+                    <p>City Food Magazine</p>
+                </div>
+                <div class="award">
+                    <i class="fas fa-award"></i>
+                    <h4>Chef of the Year 2021</h4>
+                    <p>Culinary Arts Association</p>
+                </div>
+                <div class="award">
+                    <i class="fas fa-award"></i>
+                    <h4>Top 10 Fine Dining</h4>
+                    <p>State Tourism Board</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant interior">
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Food Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Healthy food">
+                <div class="overlay">
+                    <h3>Healthy Options</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1371&q=80" alt="Steak">
+                <div class="overlay">
+                    <h3>Premium Steaks</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Dessert">
+                <div class="overlay">
+                    <h3>Decadent Desserts</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Cocktails">
+                <div class="overlay">
+                    <h3>Signature Cocktails</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"The filet mignon was cooked to perfection! Best dining experience I've had in years."</p>
+                <h4>- Sarah Johnson</h4>
+            </div>
+            <div class="testimonial">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Excellent service and amazing food. The tiramisu is to die for!"</p>
+                <h4>- Michael Chen</h4>
+            </div>
+            <div class="testimonial">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"Beautiful atmosphere and delicious food. We'll definitely be back!"</p>
+                <h4>- Emily Rodriguez</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-info">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Culinary Street, Foodville, FC 12345</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>(555) 123-4567</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@savorybites.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <p>Monday - Friday: 11am - 10pm<br>Saturday - Sunday: 10am - 11pm</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-yelp"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Make a Reservation</h3>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-group">
+                    <select id="guests" required>
+                        <option value="" disabled selected>Number of Guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5+ People</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Special Requests"></textarea>
+                </div>
+                <button type="submit" class="btn">Book Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for special offers and events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Fat to Fit. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="rest.js"></script>
+</body>
+</html>
